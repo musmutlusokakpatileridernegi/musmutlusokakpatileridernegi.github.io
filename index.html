@@ -76,16 +76,20 @@
             padding: 2rem;
             box-shadow: 0 2px 4px rgba(0,0,0,0.05);
         }
+.btn-primary {
+    background-color: #000000;
+    border-color: #000000;
+    color: #ffffff;
+    padding: 1rem 2.5rem;  /* Butonu büyütmek için padding artırıldı */
+    font-size: 1.25rem;    /* Yazı boyutunu büyüttük */
+    transition: all 0.3s ease;  /* Yumuşak geçiş efekti */
+}
 
-        .btn-primary {
-            background-color: var(--primary-color);
-            border-color: var(--primary-color);
-        }
-
-        .btn-primary:hover {
-            background-color: var(--accent-color);
-            border-color: var(--accent-color);
-        }
+.btn-primary:hover {
+    background-color: #ffffff;
+    border-color: #000000;
+    color: #000000;
+}
 
         .news-card {
             background: rgba(255, 255, 255, 0.9);
