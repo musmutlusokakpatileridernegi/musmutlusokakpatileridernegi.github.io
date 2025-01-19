@@ -1,0 +1,59 @@
+# admin/config.yml
+backend:
+  name: github
+  repo: ymusmutlusokakpatileridernegi/musmutlusokakpatileridernegi.github.io     # Bu kısmı kendi repo bilgilerinizle değiştirin 
+  branch: main # veya master
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "duyurular"
+    label: "Duyurular"
+    folder: "_posts/duyurular"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Başlık", name: "title", widget: "string"}
+      - {label: "Yayın Tarihi", name: "date", widget: "datetime", format: "DD.MM.YYYY"}
+      - {label: "İçerik", name: "body", widget: "markdown"}
+  
+  - name: "basari-hikayeleri"
+    label: "Başarı Hikayeleri"
+    folder: "_posts/basari-hikayeleri"
+    create: true
+    fields:
+      - {label: "Başlık", name: "title", widget: "string"}
+      - {label: "Alt Başlık", name: "subtitle", widget: "string"}
+      - {label: "Ana Görsel", name: "main_image", widget: "image"}
+      - {label: "Galeri Görselleri", name: "gallery_images", widget: "list", field: {label: Görsel, name: image, widget: image}}
+      - {label: "Alıntı", name: "quote", widget: "string"}
+      - {label: "Hikaye", name: "body", widget: "markdown"}
+
+  - name: "hizmetler"
+    label: "Hizmetlerimiz"
+    folder: "_posts/hizmetler"
+    create: true
+    fields:
+      - {label: "Başlık", name: "title", widget: "string"}
+      - {label: "İkon", name: "icon", widget: "select", options: ["heartbeat", "syringe", "ambulance", "first-aid", "bowl-food"]}
+      - {label: "Açıklama", name: "description", widget: "text"}
+
+  - name: "genel"
+    label: "Genel Ayarlar"
+    files:
+      - name: "iletisim"
+        label: "İletişim Bilgileri"
+        file: "_data/contact.yml"
+        fields:
+          - {label: "E-posta", name: "email", widget: "string"}
+          - {label: "TikTok", name: "tiktok", widget: "string"}
+          - {label: "YouTube", name: "youtube", widget: "string"}
+          - {label: "Instagram", name: "instagram", widget: "string"}
+      
+      - name: "bagis"
+        label: "Bağış Bilgileri"
+        file: "_data/donation.yml"
+        fields:
+          - {label: "Mama Kumbarası Linki", name: "mama_kumbarasi", widget: "string"}
+          - {label: "Bağış Açıklaması", name: "donation_text", widget: "markdown"}
