@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fındık'ın Hikayesi - Muş Mutlu Sokak Patileri Derneği</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #e4f0fd 0%, #ffffff 100%);
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.7);
+            border-radius: 15px;
+            backdrop-filter: blur(5px);
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .story-header {
+            background: linear-gradient(rgba(24, 119, 242, 0.7), rgba(24, 119, 242, 0.7)), url('findik3.jpeg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 60px 0;
+            border-radius: 15px 15px 0 0;
+        }
+
+        .story-content {
+            padding: 2rem;
+        }
+
+        .image-container {
+            margin: 2rem 0;
+        }
+
+        .story-image {
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 1rem;
+        }
+
+        .story-image:hover {
+            transform: scale(1.02);
+        }
+
+        .quote {
+            font-style: italic;
+            color: #1877f2;
+            font-size: 1.2rem;
+            margin: 2rem 0;
+            padding: 1rem;
+            border-left: 4px solid #1877f2;
+        }
+
+        .back-button {
+            background-color: #000000;
+            color: #ffffff;
+            padding: 1rem 2rem;
+            border-radius: 30px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: inline-block;
+            margin-top: 2rem;
+        }
+
+        .back-button:hover {
+            background-color: #ffffff;
+            color: #000000;
+            border: 1px solid #000000;
+        }
+
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .image-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="story-header text-center">
+            <h1 class="display-4">Fındık'ın Hikayesi</h1>
+            <p class="lead">Üç bacakla gelen mutluluk...</p>
+        </div>
+
+        <div class="story-content">
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <div class="image-grid">
+                        <img src="findik1.jpeg" alt="Fındık'ın ilk hali" class="story-image">
+                        <img src="findik2.jpeg" alt="Fındık'ın tedavi süreci" class="story-image">
+                    </div>
+
+                    <p class="lead text-center quote">
+                        "Her engel, yeni bir başlangıcın kapısıdır..."
+                    </p>
+
+                    <p>
+                        Fındık kedimizin hikayesi, bir araba kaputunda başladı. Aldığımız ihbarda, zavallı dostumuzun bir bacağının kırık olduğu bildirilmişti. İlk müdahale için götürüldüğü veterinerde yaşanan talihsiz bir tedavi süreci sonrasında, bir ayağının ampüte edilmesi kaçınılmaz hale geldi.
+                    </p>
+
+                    <p>
+                        Anestezi riski nedeniyle ameliyatın en güvenli şekilde yapılabilmesi için Fındık'ı Diyarbakır Veterinerlik Fakültesi'ne naklettik. Burada hem ampütasyon operasyonu başarıyla gerçekleştirildi, hem de kısırlaştırma işlemi yapıldı ve gerekli aşıları tamamlandı.
+                    </p>
+
+                    <div class="image-grid">
+                        <img src="findik3.jpeg" alt="Fındık'ın iyileşme süreci" class="story-image">
+                        <img src="findik4.jpeg" alt="Fındık'ın mutlu anları" class="story-image">
+                    </div>
+
+                    <p>
+                        Bugün Fındık, üç bacağıyla evimizin neşe kaynağı ve tartışmasız kraliçesi! Yaşadığı tüm zorluklara rağmen hayata sımsıkı tutundu ve bize engellerin, gerçek bir savaşçı için hiçbir şey ifade etmediğini gösterdi. Her gün bize yeni bir yaşam dersi veriyor ve sevginin gücünü hatırlatıyor.
+                    </p>
+
+                    <div class="text-center">
+                        <img src="findik5.jpeg" alt="Fındık'ın son hali" class="story-image" style="max-width: 800px;">
+                    </div>
+
+                    <div class="text-center">
+                        <a href="index.html" class="back-button">
+                            <i class="fas fa-arrow-left me-2"></i>
+                            Ana Sayfaya Dön
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

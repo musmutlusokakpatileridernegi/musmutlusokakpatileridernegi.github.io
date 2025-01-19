@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Şanslı'nın Hikayesi - Muş Mutlu Sokak Patileri Derneği</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Previous styles remain same until .story-image */
+        body {
+            background: linear-gradient(135deg, #e4f0fd 0%, #ffffff 100%);
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.7);
+            border-radius: 15px;
+            backdrop-filter: blur(5px);
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .story-header {
+            background: linear-gradient(rgba(24, 119, 242, 0.7), rgba(24, 119, 242, 0.7)), url('sansli3.jpeg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 60px 0;
+            border-radius: 15px 15px 0 0;
+        }
+
+        .story-content {
+            padding: 2rem;
+        }
+
+        .story-image {
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            width: 100%;
+            height: 400px; /* Fixed height for all images */
+            object-fit: cover; /* This will maintain aspect ratio while covering the container */
+            margin-bottom: 1rem;
+        }
+
+        .story-image:hover {
+            transform: scale(1.02);
+        }
+
+        .quote {
+            font-style: italic;
+            color: #1877f2;
+            font-size: 1.2rem;
+            margin: 2rem 0;
+            padding: 1rem;
+            border-left: 4px solid #1877f2;
+        }
+
+        .back-button {
+            background-color: #000000;
+            color: #ffffff;
+            padding: 1rem 2rem;
+            border-radius: 30px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: inline-block;
+            margin-top: 2rem;
+        }
+
+        .back-button:hover {
+            background-color: #ffffff;
+            color: #000000;
+            border: 1px solid #000000;
+        }
+
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .image-grid-3 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .image-grid, .image-grid-3 {
+                grid-template-columns: 1fr;
+            }
+            
+            .story-image {
+                height: 300px; /* Smaller height for mobile */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="story-header text-center">
+            <h1 class="display-4">Şanslı'nın Hikayesi</h1>
+            <p class="lead">Umutla gelen yeni hayat...</p>
+        </div>
+
+        <div class="story-content">
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <div class="image-grid">
+                        <img src="sansli1.jpeg" alt="Şanslı'nın ilk hali" class="story-image">
+                        <img src="sansli2.jpeg" alt="Şanslı'nın tedavi süreci" class="story-image">
+                    </div>
+
+                    <p class="lead text-center quote">
+                        "Her can ikinci bir şansı hak eder..."
+                    </p>
+
+                    <p>
+                        Şanslı köpeğimizin hikayesi, bir yol kenarında başladı. Bir arabanın çarpıp öylece bırakıp gittiği canımız, yol kenarında ölüme yatmış haldeydi ki yolumuz kesişti. İlk müdahalesini hemen Muş'ta gerçekleştirdik, ancak durumu daha kapsamlı bir tedavi gerektiriyordu.
+                    </p>
+
+                    <p>
+                        Daha detaylı tedavisi için Petnakil desteğiyle Ankara'ya naklini sağladık. Burada tam 3 ay boyunca süren yoğun bir tedavi süreci geçirdi. Bu süreçte Şanslı'nın yaşama olan bağlılığı ve iyileşme azmi hepimize ilham verdi.
+                    </p>
+
+                    <div class="image-grid">
+                        <img src="sansli3.jpeg" alt="Şanslı'nın iyileşme süreci" class="story-image">
+                        <img src="sansli4.jpeg" alt="Şanslı'nın tedavi sonrası" class="story-image">
+                    </div>
+
+                    <p>
+                        Ve sonunda o mutlu gün geldi! Tedavisi tamamlanan Şanslı'mız için ömürlük, sevgi dolu bir aile bulduk. Bugün artık sağlıklı, mutlu ve onu seven ailesiyle birlikte huzur içinde yaşıyor. Şanslı'nın hikayesi, asla pes etmememiz gerektiğini ve her canın bir şansı hak ettiğini bizlere bir kez daha gösterdi.
+                    </p>
+
+                    <div class="text-center">
+                        <div class="image-grid-3">
+                            <img src="sansli6.jpeg" alt="Şanslı'nın yeni hayatı" class="story-image">
+                            <img src="sansli7.jpeg" alt="Şanslı'nın mutlu anları" class="story-image">
+                            <img src="sansli8.jpeg" alt="Şanslı'nın son hali" class="story-image">
+                        </div>
+                    </div>
+
+                    <div class="text-center">
+                        <a href="index.html" class="back-button">
+                            <i class="fas fa-arrow-left me-2"></i>
+                            Ana Sayfaya Dön
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
