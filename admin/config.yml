@@ -1,6 +1,6 @@
 # admin/config.yml
 backend:
-  name: github
+  name: git-gateway
   repo: ymusmutlusokakpatileridernegi/musmutlusokakpatileridernegi.github.io     # Bu kısmı kendi repo bilgilerinizle değiştirin 
   branch: main # veya master
 
